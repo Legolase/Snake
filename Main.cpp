@@ -41,9 +41,11 @@ int main(int argv, char* argc[])
 {
 	if (argv != 3)
 	{
-		std::cerr << "Invalid count of arguements";
+		std::cerr << "Invalid count of arguements\n"
+			<< "Pattern: Snake.exe <width> <height>\n";
 		return ERROR_INVALID_PARAMETER;
 	}
+	system("cls");
 	std::stringstream str;
 	int width, height;
 	std::cout << argc[1] << "<>" << argc[2];
